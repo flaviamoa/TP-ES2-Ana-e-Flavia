@@ -3,7 +3,7 @@
 Trabalho Prático de Engenharia de Software
 
 Nome: Ana Carolina Coelho Mendes
-	 Flávia Mendes O. Abreu
+      Flávia Mendes O. Abreu
 
 https://github.com/quilljs/quill
 
