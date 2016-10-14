@@ -90,8 +90,11 @@ O programa é relativamente novo, cerca de dois anos, e ainda pode e vai passar 
 Referências
 
 https://quilljs.com/blog/announcing-quill-1-0/#new-features
+
 https://webpack.github.io/ 
+
 https://en.wikipedia.org/wiki/Rich_Text_Format
+
 1 https://github.com/quilljs/quill/releases/tag/v1.0.6
 
 
