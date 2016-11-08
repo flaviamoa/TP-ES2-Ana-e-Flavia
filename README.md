@@ -28,7 +28,7 @@ O sistema possui uma barra de ferramentas que auxilia os usuários a formatarem 
 
 Foram utilizadas principalmente as linguagens de programação Java e JavaScript para desenvolver este aplicativo. Este sistema foi criado por  Jason Chen, membro do programa de desenvolvedores, ele possui 53 estrelas e 94 seguidores no GitHub, além de possuir 9 repositórios. Um dos principais colaboradores é o Byron Milligan que possui 54 estrelas, 7 seguidores e 3 repositórios no GitHub. Não existe uma divisão clara de tarefas, mas é certo que o Jason é o desenvolvedor que realiza mais alterações no quill, de acordo com o número de commits realizados por ele dentro de um mês, como pode ser observado na imagem logo abaixo.
 
-![]()
+![](https://github.com/AnaCarolina86/TP-ES2-Ana-e-Flavia/blob/master/commits.jpg)
 
   Fonte: [GitHub - Quill Contributors](https://github.com/quilljs/quill/graphs/contributors)
 
@@ -111,7 +111,7 @@ A fase beta do Quill obteve 12 versões lançadas, até que surgisse a versão r
 Após 5 versões rc sem muitas alterações significativas, o Quill foi oficialmente lançado e se encontra atualmente na versão `1.0.6`.
 Evolução do sistema:
 
-![]()
+![](https://github.com/AnaCarolina86/TP-ES2-Ana-e-Flavia/blob/master/evolucao.jpg)
 
 Fonte: [Code Frequency](https://github.com/quilljs/quill/graphs/code-frequency)
 
