@@ -49,6 +49,8 @@ quill.getFormat(1, 1);   // { bold: true, italic: true }
 
 Isso é possível porque  todas as chamadas de API do núcleo permitem índices arbitrários e comprimentos de acesso ou modificação. O evento API também relata alterações em um formato JSON intuitivo, dessa forma não há necessidade de analisar o DOM. Como o ambiente web está se tornando cada vez mais rica e interativa, os editores de textos necessitam considerar esses casos de uso. Além disso, esse sistema suporta um número ilimitado de formatos de textos, e  expõe seu próprio modelo de documento, uma abstração poderosa sobre o DOM, permitindo a ampliação e personalização da edição. Vale destacar que essa aplicação permite que funcionalidades executem da mesma maneira em diversos sistemas operacionais e navegadores.
 
+[Sumário](#sumário)
+
 ## Rich text
 
 
