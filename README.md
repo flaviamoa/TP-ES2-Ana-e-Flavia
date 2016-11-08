@@ -179,6 +179,6 @@ O programa é relativamente novo, cerca de dois anos, e ainda pode e vai passar 
 3. https://en.wikipedia.org/wiki/Rich_Text_Format
 4. https://github.com/quilljs/quill/releases/tag/v1.0.6
 
-
+[Topo](#sumário)
 
 
