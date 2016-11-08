@@ -18,6 +18,8 @@
 
 O Quill Rich Text Editor vem sendo desenvolvido há aproximadamente dois anos com o objetivo de ser um editor de texto de fácil uso e o melhor de sua classe, de forma a se tornar o mais utilizado em aplicações web. O programa possui a sua própria API de código aberto e disponível no GitHub para avaliações e possíveis novos colaboradores. Pode-se afirmar também que ele se destina a usuários com experiência intermediária em web.
 
+[Topo](#sumário)
+
 ## Introdução
 
 O Quill Rich Text Editor é um editor de texto que foi construído para possuir grande compatibilidade com os sistemas operacionais mais atuais (Windows, Linux, Android, por exemplo) e com vários navegadores (Edge, Chrome, Firefox), além disso ele pode ser facilmente adaptado a inclusões e alterações de requisitos. O objetivo desse aplicativo é ser uma alternativa para os editores de texto existentes até a presente data, e que seja de livre acesso aos usuários, possuindo constante colaboração de voluntários no seu desenvolvimento. 
@@ -49,7 +51,7 @@ quill.getFormat(1, 1);   // { bold: true, italic: true }
 
 Isso é possível porque  todas as chamadas de API do núcleo permitem índices arbitrários e comprimentos de acesso ou modificação. O evento API também relata alterações em um formato JSON intuitivo, dessa forma não há necessidade de analisar o DOM. Como o ambiente web está se tornando cada vez mais rica e interativa, os editores de textos necessitam considerar esses casos de uso. Além disso, esse sistema suporta um número ilimitado de formatos de textos, e  expõe seu próprio modelo de documento, uma abstração poderosa sobre o DOM, permitindo a ampliação e personalização da edição. Vale destacar que essa aplicação permite que funcionalidades executem da mesma maneira em diversos sistemas operacionais e navegadores.
 
-[Sumário](#sumário)
+[Topo](#sumário)
 
 ## Rich text
 
@@ -58,6 +60,7 @@ O Rich Text Format (RTF), como o próprio nome sugere, é um formato de texto ma
 A preocupação com a variedades de formatação surgiu na década de 80 por membros do time de desenvolvimento da Microsoft e, desde então, vem sofrendo melhorias no sentido de incluir cada vez mais funcionalidades aos editores de texto.
 O Quill possui sua própria biblioteca de rich text, que possui três módulos básicos: o delta.js, o op.js 	e o type.js. Os “ops” são os arrays de operações e os “deltas” são objetos com chaves “ops” para um array de operações.
 
+[Topo](#sumário)
 
 ## Funcionalidades
 
@@ -69,6 +72,7 @@ Além dessas funcionalidades, existem as básicas de um editor de texto, como a 
 
 Esta imagem mostra uma versão no sistema on line para que o usuário experimente antes de fazer o download do sistema.
 
+[Topo](#sumário)
 
 ## Projeto arquitetural:
 
@@ -89,6 +93,7 @@ Já a pasta modules possui os módulos em si do sistema, como a barra de ferrame
 Por último, a pasta test, como o próprio nome já diz, contém os códigos para a realização de testes e explicações de como reproduzi-los na sua própria máquina, sabendo-se que  Karma  e Protractor  são usados para os testes.
 Como este é um sistema relativamente grande e complexo, justifica-se o uso de uma modularização eficiente e de uma programação orientada a objetos com a finalidade de tornar este sistema mais fácil de analisar e buscar erros no código.
 
+[Topo](#sumário)
 
 ## Releases:
 
@@ -103,6 +108,7 @@ Evolução do sistema:
 
 Fonte: [Code Frequency](https://github.com/quilljs/quill/graphs/code-frequency)
 
+[Topo](#sumário)
 
 ## Características do produto
 
@@ -126,8 +132,7 @@ Já o Bubbles foi planejado para usuários exigentes que não gostam de poluiç�
 Essa versão do editor já vem com todas as funcionalidades disponíveis para a escolha do usuário. 
 Como o programa é de código aberto, os usuários que também forem desenvolvedores podem personalizar o seu próprio modelo de editor de texto com as ferramentas da API do Quill, o website deste explica como fazer isso.
 
-
-
+[Topo](#sumário)
 
 ## Começando a usar
 
@@ -138,6 +143,8 @@ O Quill foi projetado para ser executado em navegadores, sendo assim, sua única
 
 - npm - npm install quill
 - tar - https://github.com/quilljs/quill/releases
+
+[Topo](#sumário)
   
 ## Conclusão
 
@@ -147,6 +154,8 @@ Sua versão mais recente foi liberada neste ano e o seu repositório no GitHub e
 Sua API foi inteiramente construída para o seu uso específico, fazendo com que suas ferramentas se tornem mais fluidas e menos complexas. Porém, ela pode ser utilizada em outras ferramentas, caso o projetista assim deseje, uma vez que ela é de código livre. Essa característica ajuda em muito em sua manutenção e melhoria de performance. Ela, é claro, não possui restrição quanto ao sistema operacional, mais uma das vantagens de ser projetada para vários navegadores.
 O programa é relativamente novo, cerca de dois anos, e ainda pode e vai passar por muitas mudanças e adequações até que se torne indispensável em aplicações Web. Ele pode receber muitas novas ferramentas devido à ambição do seu projeto original de ser “o” melhor editor de rich text online.
 
+[Topo](#sumário)
+
 ## Referências
 
 1. https://quilljs.com/blog/announcing-quill-1-0/#new-features
@@ -154,6 +163,6 @@ O programa é relativamente novo, cerca de dois anos, e ainda pode e vai passar 
 3. https://en.wikipedia.org/wiki/Rich_Text_Format
 4. https://github.com/quilljs/quill/releases/tag/v1.0.6
 
-
+[Topo](#sumário)
 
 
