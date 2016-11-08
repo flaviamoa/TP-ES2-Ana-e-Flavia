@@ -1,36 +1,51 @@
 # Quill
+![](https://github.com/flaviamoa/TP-ES2-Ana-e-Flavia/blob/master/quill.png)
+
+## Sumário
+1. [Resumo](#resumo)
+2. [Introdução](#introdução)
+3. [Rich Text](#rich-text)
+4. [Funcionalidades](#funcionalidades)
+5. [Projeto Arquitetural](#projeto-arquitetural)
+6. [Releases](#releases)
+7. [Características do Produto](#características-do-produto)
+8. [Começando a Usar](#começando-a-usar)
+9. [Conclusão](#conclusão)
+10. [Referências](#referências)
+ 
 
 ## Resumo
 
-
 O Quill Rich Text Editor vem sendo desenvolvido há aproximadamente dois anos com o objetivo de ser um editor de texto de fácil uso e o melhor de sua classe, de forma a se tornar o mais utilizado em aplicações web. O programa possui a sua própria API de código aberto e disponível no GitHub para avaliações e possíveis novos colaboradores. Pode-se afirmar também que ele se destina a usuários com experiência intermediária em web.
-
-
-
 
 ## Introdução
 
-
 O Quill Rich Text Editor é um editor de texto que foi construído para possuir grande compatibilidade com os sistemas operacionais mais atuais (Windows, Linux, Android, por exemplo) e com vários navegadores (Edge, Chrome, Firefox), além disso ele pode ser facilmente adaptado a inclusões e alterações de requisitos. O objetivo desse aplicativo é ser uma alternativa para os editores de texto existentes até a presente data, e que seja de livre acesso aos usuários, possuindo constante colaboração de voluntários no seu desenvolvimento. 
-É possível fazer o download do Quill em vários formatos, de forma que o usuário possa  usar a aplicação prontamente, também o código fonte completo é disponibilizado para fazer o download. Para fazer o download do Quill e/ou do código fonte basta acessar https://github.com/quilljs/quill ou o website do produto https://quilljs.com/docs/download/ . Uma Rede de Fornecimento de Conteúdo (CDN) está disponível e possui o suporte da Amazon CloudFront, uma outra opção é adicionar o Quill como uma dependência NPM e adicioná-lo no próprio fluxo de trabalho de compilação.
+É possível fazer o download do Quill em vários formatos, de forma que o usuário possa  usar a aplicação prontamente, também o código fonte completo é disponibilizado para fazer o download. Para fazer o download do Quill e/ou do código fonte basta acessar [GitHub -  Quill](https://github.com/quilljs/quill) ou o website do produto [Quill Download](https://quilljs.com/docs/download/) . Uma Rede de Fornecimento de Conteúdo (CDN) está disponível e possui o suporte da Amazon CloudFront, uma outra opção é adicionar o Quill como uma dependência NPM e adicioná-lo no próprio fluxo de trabalho de compilação.
 O sistema possui uma barra de ferramentas que auxilia os usuários a formatarem o texto muito similar aos editores de texto comuns, como o Word e o Open Office, apresentando as opções para estilizar a fonte, como tipo, tamanho, negrito, itálico, sublinhado, cortado, cor, cor de preenchimento, lista numerada, lista com marcadores, alinhamento do parágrafo, inserção de links e imagens externos. 
 Foram utilizadas principalmente as linguagens de programação Java e JavaScript para desenvolver este aplicativo. Este sistema foi criado por  Jason Chen, membro do programa de desenvolvedores, ele possui 53 estrelas e 94 seguidores no GitHub, além de possuir 9 repositórios. Um dos principais colaboradores é o Byron Milligan que possui 54 estrelas, 7 seguidores e 3 repositórios no GitHub. Não existe uma divisão clara de tarefas, mas é certo que o Jason é o desenvolvedor que realiza mais alterações no quill, de acordo com o número de commits realizados por ele dentro de um mês, como pode ser observado na imagem logo abaixo.
 
-  Fonte: https://github.com/quilljs/quill/graphs/contributors
+![]()
+
+  Fonte: [GitHub - Quill Contributors](https://github.com/quilljs/quill/graphs/contributors)
 
 
 Desde o surgimento da Web, a criação de conteúdo tornou-se imprescindível para uma boa edição de textos, e a proposta desse sistema é trazer soluções práticas para isso. O Quill foi construído baseado em texto natural, então quando ele quer saber se algo está em negrito, ele não precisa atravessar todo o DOM, basta chamar o método getFormat(5, 1) que recupera formatação comum de texto no intervalo dado. Métodos:
+
+```javascript 
 getFormat(range: Range = current): { [String]: any }
 getFormat(index: Number, length: Number = 0): { [String]: any }
-	Exemplo de uso:
+```
 
+Exemplo de uso:
 
+```javascript 
 quill.setText('Hello World!');
 quill.formatText(0, 2, 'bold', true);
 quill.formatText(1, 2, 'italic', true);
 quill.getFormat(0, 2);   // { bold: true }
 quill.getFormat(1, 1);   // { bold: true, italic: true }
-
+```
 
 Isso é possível porque  todas as chamadas de API do núcleo permitem índices arbitrários e comprimentos de acesso ou modificação. O evento API também relata alterações em um formato JSON intuitivo, dessa forma não há necessidade de analisar o DOM. Como o ambiente web está se tornando cada vez mais rica e interativa, os editores de textos necessitam considerar esses casos de uso. Além disso, esse sistema suporta um número ilimitado de formatos de textos, e  expõe seu próprio modelo de documento, uma abstração poderosa sobre o DOM, permitindo a ampliação e personalização da edição. Vale destacar que essa aplicação permite que funcionalidades executem da mesma maneira em diversos sistemas operacionais e navegadores.
 
@@ -67,13 +82,13 @@ Já a pasta docs é o local onde o sistema é documentado, possui inclusive info
 A pasta formats possui os códigos de especificação dos estilos usados no editor de texto, um exemplo disso, é o arquivo bold.js que confere a característica negrito ao texto, o código pode ser observado logo abaixo:
 
 ![](https://github.com/flaviamoa/TP-ES2-Ana-e-Flavia/blob/master/estilo.png)
+
 Já a pasta modules possui os módulos em si do sistema, como a barra de ferramentas,  o conteiner do aplicativo, e o espaço onde o texto será escrito o texto no editor, por exemplo.
 Por último, a pasta test, como o próprio nome já diz, contém os códigos para a realização de testes e explicações de como reproduzi-los na sua própria máquina, sabendo-se que  Karma  e Protractor  são usados para os testes.
 Como este é um sistema relativamente grande e complexo, justifica-se o uso de uma modularização eficiente e de uma programação orientada a objetos com a finalidade de tornar este sistema mais fácil de analisar e buscar erros no código.
 
 
 ## Releases:
-
 
 Até os tempos presentes, o quill já conta com 26 versões lançadas incluindo protótipos e versões betas.
 A versão 0.20.0 trouxe como principais mudanças correções relativas à usabilidade no navegador Chrome e bugs com tags, além de acrescentar funcionalidades como o gerenciador de “colar” passar a aceitar conversão customizada de funções, entre outras.
@@ -84,7 +99,7 @@ Evolução do sistema:
 
 ![]()
 
-Fonte: https://github.com/quilljs/quill/graphs/code-frequency
+Fonte: [Code Frequency](https://github.com/quilljs/quill/graphs/code-frequency)
 
 
 ## Características do produto
